@@ -261,6 +261,7 @@ footer p{
 
 #connect i{
     padding: 0px;
+    margin-bottom: 15px;
 }
 
 #connect p{
@@ -270,6 +271,7 @@ footer p{
     align-items: flex-start;
     padding-left: 60px;
     text-align: center;
+    /* line-height: 35px; */
 }
 
 #copyright{
