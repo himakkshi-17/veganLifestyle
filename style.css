@@ -1,0 +1,468 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: none;
+    font-family: 'Catamaran', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* navigation bar */
+#navbar{
+    position: sticky;
+    background-color: black;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    /* position: absolute;  */
+    position: relative;
+    width: 100%;
+    height: 80px;
+    /* z-index: -1; */
+    /* opacity: 0.3; */
+}
+
+/* navigation bar: logo_imag and text */
+#logo{
+    float: right;
+}
+
+#logo img {
+    height: 50px;
+    width: auto;
+    margin: 10px;
+    margin-top: 15px;
+    margin-right: 30px;
+}
+
+/* navigation bar: list and list items */
+#navbar ul{
+    display: flex;
+    padding-top: 10px ;
+    padding-left: 40px;
+    margin: 15px;
+    margin-top: 0px;
+    align-items: center;
+}
+
+#navbar ul li{
+    list-style: none;
+    margin: 15px ;
+    margin-top: 0px;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.5rem;
+    color: blanchedalmond;
+}
+
+#navbar ul li a:hover{
+    color: rgba(220, 235, 13, 0.808);
+}
+
+#navbar ul li a:active{
+    text-decoration:none;
+    color: rgba(220, 235, 13, 0.808);
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:10px 300px;
+    top: 180px;
+    height: 665px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Catamaran', sans-serif;
+}
+
+#home::before{
+    content: "";
+    background: url('./images/bg1.png') no-repeat center center/cover ;
+    position: absolute;
+    width: 100%;
+    height: 680px;
+    top:  80px;
+    z-index: -1;
+    opacity: 0.95; 
+    /* overflow-x: hidden; */
+}
+
+#home h1{
+    color:black;
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 4rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+#home p{
+    color:black;
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+#home h2{
+    color:black;
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 3rem;
+    margin: 40px;
+    margin-top: 80px;
+}
+
+/* Our Services */
+#services{
+    /* top: 1500px; */
+    height: 450px;
+    margin: 30px;
+    margin-top: 90px;
+}
+
+#services h1{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Catamaran', sans-serif;
+    margin: 20px;
+}
+
+#services.container{
+    display: flex;
+    /* flex-direction: column; */
+    margin: 34px;
+}
+
+#services .box{
+    border: 2px solid rgb(12, 12, 12);
+    padding: 20px 34px;
+    margin: 5px 30px;
+    border-radius: 28px;
+    margin-bottom: 20px;
+    height: 34%;
+    width: 28%;
+    display: inline-block;
+}
+
+#services .box h3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+#services .box img{ 
+    height: 160px;
+    width: auto;
+    margin: auto;
+    display: block;
+ }
+
+ #services .box p{
+    font-family: 'Catamaran', sans-serif;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+#why {
+    margin: 10px;
+    margin-top: 90px;
+}
+
+#why h1{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Catamaran', sans-serif;
+    margin-bottom: 10px;
+}
+
+#why p{
+    color:black;
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.2rem;
+    margin: 30px;
+}
+
+#why #why_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#why img{
+    width: 45%;
+    height: 450px;
+    margin: 30px;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 400px;
+    width: 100%;
+    background: #000;
+    color: blanchedalmond;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.footer_box{
+    margin: 30px 70px;
+    display: block;
+    width: 30%;
+    height: 360px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_box p{
+    text-align: justify;
+}
+
+footer h3{
+    /* text-align: center; */
+    font-size: 1.8rem;
+    font-family: 'Catamaran', sans-serif;
+    margin: 30px;
+}
+
+footer p{
+    text-align: justify;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.2rem;
+    margin: 30px;
+}
+
+.fas , .fab{
+    font-size: 1.5rem;
+    line-height: 2;
+    display: inline;
+}
+
+#connect i {
+    padding: 100px;
+}
+
+#copyright{
+    display: block;
+    text-align: center;
+    margin: 5px;
+    font-family: 'Catamaran', sans-serif;
+}
+
+/* media queries */
+@media screen and (max-width: 1460px){
+    #home h1{
+        font-size: 3rem;
+    }
+    #home p{
+        font-size: 1.5;
+    }
+    #home h2{
+        font-size: 2rem;
+    }
+
+    .footer_box{
+        margin: 20px 20px;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    #home{
+        padding: 10px 100px;
+    }
+
+    #why img{
+        width: 45%;
+        height: 250px;
+        margin: 20px;
+    }
+
+    #services .box{
+        padding: 20px 14px;
+        margin: 5px 20px;
+        height: 50%;
+        width: 28%;
+        display: inline-block;
+    }
+    #services .box img{ 
+        height: 100px;
+     }
+}
+
+@media screen and (max-width: 1176px){
+    #services.container{
+        display: flex;
+        flex-direction: column;
+        margin: 34px;
+    }
+    #services .box{
+        padding: 20px 34px;
+        margin: 5px 20px;
+        height: 48%;
+        width: 28%;
+        display: inline-block;
+    }
+    .footer_box{
+        margin: 0px;
+    }
+    .footer_box p{
+        padding: auto;
+        margin: 0px;
+    }
+    footer #faq p{
+       line-height: 25px;
+      }
+}
+
+@media screen and (max-width: 954px){
+
+    #navbar{
+        height: 180px;
+    }
+    #navbar::before{
+        height: 180px;
+    }
+    #navbar ul{
+        flex-direction: column;
+    }
+    #navbar ul li a{
+        font-size: 1rem;
+        padding: 0px 7px;
+        padding-bottom: 4px;
+    }
+
+    #home{
+        padding:10px 100px;
+    }
+    #home h1{
+        font-size: 3rem;
+    }
+    #home p{
+        font-size: 1.5rem;
+    }
+    #home h2{
+        font-size: 3rem;
+    }
+
+    #services{
+        /* top: 500px; */
+        margin-top: 0px;
+        height: 1000px; ;
+    }
+    #services.container{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    #services .box{
+        display: block;
+        width: 450px;
+        height: 280px;
+        padding: 10px 24px;
+        margin: 35px 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #services .box h3{
+        font-size: 1rem;
+    }
+    #services .box img{ 
+        height: 80px;
+     }
+
+    #why img{
+        display: block;
+        width: 500px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer{
+        height: 300px;
+    }
+    .footer_box {
+        /* margin: 30px 70px;
+        display: block;
+        width: 30%; */
+        height: 260px;
+    }
+    footer h3{
+        font-size: 1.5rem;
+    }
+    footer #faq{
+      display: none;
+    }
+    .fas , .fab{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 850px){
+    #home{
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 775px){
+    .footer_box {
+        width: 48%;
+        padding: 0px; 
+        margin: 0px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    
+    body{
+        width: 550px;
+    }
+    #home::before{
+        width: 550px;
+    } 
+    footer{
+        width: 550px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+    }
+    .footer_box {
+        margin: 0px;
+    }
+   
+    #connect p{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        /* margin-left: 50px; */
+    }
+    #connect i{
+        padding: 10px;
+    }
+}
