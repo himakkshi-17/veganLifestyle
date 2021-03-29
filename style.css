@@ -259,8 +259,17 @@ footer p{
     display: inline;
 }
 
-#connect i {
-    padding: 100px;
+#connect i{
+    padding: 0px;
+}
+
+#connect p{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 60px;
+    text-align: center;
 }
 
 #copyright{
@@ -307,7 +316,11 @@ footer p{
     }
     #services .box img{ 
         height: 100px;
-     }
+    }
+
+    #faq p{
+        line-height: 25px;
+    }
 }
 
 @media screen and (max-width: 1176px){
@@ -330,9 +343,6 @@ footer p{
         padding: auto;
         margin: 0px;
     }
-    footer #faq p{
-       line-height: 25px;
-      }
 }
 
 @media screen and (max-width: 954px){
@@ -459,8 +469,7 @@ footer p{
         flex-direction: row;
         width: 100%;
         align-items: center;
-        justify-content: center;
-        /* margin-left: 50px; */
+        justify-content: flex-start;
     }
     #connect i{
         padding: 10px;
